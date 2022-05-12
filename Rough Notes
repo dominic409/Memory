@@ -1,0 +1,9 @@
+totally scalable 
+
+1-Go to routes in server and add your routes
+2-Go to controller of server and create that function
+3-Go to api call in client and and go to index.js page annd create the function
+4-then go to action of client and create a functon and export it 
+5-Finaly go to reducers and implement the logic of thwe function is created in action
+6-Then add the functions to the components where youi want it
+7-
