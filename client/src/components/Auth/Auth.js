@@ -26,7 +26,7 @@ const SignUp = () => {
     };
 
     const handleSubmit = (e) => {
-     
+      
     };
 
     const googleSuccess = async (res) => {
@@ -35,7 +35,7 @@ const SignUp = () => {
 
     const googleError = (error) => {
         console.log(error)
-        alert('Google Sign In was unsuccessful. Try again later');
+        // alert('Google Sign In was unsuccessful. Try again later');
     }
 
     const handleChange = (e) => {
@@ -65,9 +65,17 @@ const SignUp = () => {
                         {isSignup ? 'Sign Up' : 'Sign In'}
                     </Button>
                     <GoogleLogin
-                        clientId="564033717568-e5p23rhvcs4i6kffgsbci1d64r8hp6fn.apps.googleusercontent.com"
+                        clientId="89014929320-crh9rv62gum4jfdakhe72n3ckp09jkho.apps.googleusercontent.com"
                         render={(renderProps) => (
-                            <Button className={classes.googleButton} color="primary" fullWidth onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<Icon />} variant="contained">
+                            <Button 
+                            className={classes.googleButton} 
+                            color="primary" 
+                            fullWidth 
+                            onClick={renderProps.onClick} 
+                            disabled={renderProps.disabled} 
+                            startIcon={<Icon />} 
+                            variant="contained"
+                            >
                                 Google Sign In
                             </Button>
                         )}
